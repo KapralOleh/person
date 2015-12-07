@@ -1,4 +1,12 @@
-section
-	h1 {{main.currentPerson.name}}
-	img(ng-src='{{main.currentPerson.img}}', alt='')
-	p {{main.currentPerson.desc}}
+section.person-desk.person-id-section
+  h1 {{main.currentPerson.name}}
+  img(ng-src='{{main.currentPerson.img}}', alt='')
+  p {{main.currentPerson.desc}}
+  .gallery-section
+    h2 Gallery
+    .gallery-item(ng-repeat="img in main.images")
+      a(ng-click="main.openLightboxModal($index)")
+        img(ng-src="{{img.url}}")
+
+
+

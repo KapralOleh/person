@@ -7,6 +7,7 @@
 
   /** @ngInject */
   function MainController() {
-    
+    var vm = this;
+    vm.personImages = ['http://placehold.it/200x100','http://placehold.it/200x100','http://placehold.it/200x100','http://placehold.it/200x100']
   }
 })();
