@@ -1,0 +1,68 @@
+.back
+  float right
+  color gold
+  font-weight bold
+  border 1px solid #9524A9
+  border-radius 8px
+  margin-top 10px
+  background #9524A9
+  padding 5px
+  &:hover
+    color #9524A9
+    background gold
+    border 1px solid #9524A9
+.person-desk
+  width 400px
+  margin 0 auto
+  padding-top 50px
+  clear both
+  ul.animate
+  &.ng-enter
+    transition 0.5s linear all
+    opacity 0
+  ul.animate
+  &.ng-enter
+    &.ng-enter-active
+      opacity 1
+  ul.animate
+  &.ng-leave
+    transition 0.5s linear all
+    opacity 1
+  ul.animate
+  &.ng-leave
+    &.ng-leave-active
+      opacity 0
+    .animate
+    &.ng-enter
+      transition 0.3s linear all
+      opacity 0
+      transform translateX(-100%)
+    .animate
+    &.ng-enter
+      &.ng-enter-active
+        opacity 1
+        transform translateX(0)
+    .animate
+    &.ng-leave
+      transition 0.3s linear all
+      opacity 1
+      transform translateX(0)
+    .animate
+    &.ng-leave
+      &.ng-leave-active
+        opacity 0
+        transform translateX(100%)
+
+  ul
+    li
+      display flex
+      span
+        display inline-block
+        height 50px
+        line-height 50px
+        font-size 26px
+      img
+        width 50px
+        height 50px
+        border-radius 50%
+        margin-right 20px
