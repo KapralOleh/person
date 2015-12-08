@@ -17,7 +17,12 @@
         latitude: 49.802981,
         longitude: 24.011145
       },
-      options: { draggable: true }
+      options: { draggable: true },
+      show: false
     };
+    vm.windowOptions = {
+      visible: false
+    };
+    vm.title = 'Hello';
   }
 })();

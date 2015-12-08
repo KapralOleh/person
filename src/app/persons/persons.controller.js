@@ -48,12 +48,17 @@
       }
       return vm.sort
     }
+    vm.options = {
+      index: 3,
+      escKey: false,
+      timeToIdle: 4000
+    };
 
     vm.text = "Show"
     vm.variable = false;
     vm.toogle = function () {
       vm.variable = !vm.variable;
-      vm.variable ? vm.text = "Hide" : vm.text = "Show"
+      vm.variable ? vm.text = "Hide" : vm.text = "Show";
     }
   }
 })();

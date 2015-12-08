@@ -30,13 +30,13 @@
         url: '/persons',
         templateUrl: 'app/persons/persons.html',
         controller: 'PersonCtrl',
-        controllerAs: 'main'
+        controllerAs: 'PersonCtrl'
       })
       .state('personDetail', {
         url: '/persons/:id',
         templateUrl: 'app/persons/personid/personid.html',
         controller: 'PersonCtrl',
-        controllerAs: 'main'
+        controllerAs: 'PersonCtrl'
       });
 
     $urlRouterProvider.otherwise('/');

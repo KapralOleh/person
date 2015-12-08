@@ -1,14 +1,11 @@
 nav.navigation(person-navbar)
 section.person-desk.person-id-section
-  h1 {{main.currentPerson.name}}
-  img(ng-src='{{main.currentPerson.img}}', alt='')
-  p {{main.currentPerson.desc}}
+  h1 {{PersonCtrl.currentPerson.name}}
+  img(ng-src='{{PersonCtrl.currentPerson.img}}', alt='')
+  p {{PersonCtrl.currentPerson.desc}}
   .gallery-section
     h2 Gallery
-    ng-photoswipe(slides="main.images",options="opts")
-    //- .gallery-item(ng-repeat="img in main.images")
-    //-   a(ng-click="main.openLightboxModal($index)")
-    //-     img(ng-src="{{img.url}}")
-
-
+    ng-photoswipe(slides="PersonCtrl.images",options="PersonCtrl.options")
+  .map-section
+    h2 Location
 

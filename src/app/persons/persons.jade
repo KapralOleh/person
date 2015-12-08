@@ -1,12 +1,12 @@
 nav.navigation(person-navbar)
 a(ng-href="/" class="back") Back
 .person-desk
-  input.person-input.field(type='text', ng-model='main.search.name', placeholder='Search..')
-  button.person-input.button(ng-click='main.toogle()') {{main.text}}
-  ul.person-list.animate(ng-if='main.variable')
-    button.person-input.button(ng-click='main.sortOrder()') Sort
-    li.animate(ng-repeat='item in main.list | filter: main.search.name:strict | orderBy: main.sort ', person-item)
-  form(ng-submit='main.addPerson()')
-    input.person-input.field(type='text', ng-model='main.name', placeholder='name')
-    input.person-input.field(type='number', ng-model='main.age', placeholder='age')
+  input.person-input.field(type='text', ng-model='PersonCtrl.search.name', placeholder='Search..')
+  button.person-input.button(ng-click='PersonCtrl.toogle()') {{PersonCtrl.text}}
+  ul.person-list.animate(ng-if='PersonCtrl.variable')
+    button.person-input.button(ng-click='PersonCtrl.sortOrder()') Sort
+    li.animate(ng-repeat='item in PersonCtrl.list | filter: PersonCtrl.search.name:strict | orderBy: PersonCtrl.sort ', person-item)
+  form(ng-submit='PersonCtrl.addPerson()')
+    input.person-input.field(type='text', ng-model='PersonCtrl.name', placeholder='name')
+    input.person-input.field(type='number', ng-model='PersonCtrl.age', placeholder='age')
     input.person-input.button(type='submit', value='Add person')
