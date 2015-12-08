@@ -22,7 +22,9 @@
       })
       .state('Contact', {
         url: '/contact',
-        templateUrl: 'app/contact-us/contact-us.html'
+        templateUrl: 'app/contact-us/contact-us.html',
+        controller: 'ContactController',
+        controllerAs: 'ContactCtrl'
       })
       .state('Persons', {
         url: '/persons',

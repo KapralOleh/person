@@ -6,7 +6,7 @@
     .controller('PersonCtrl', PersonCtrl);
 
   /** @ngInject */
-  function PersonCtrl($stateParams,Lightbox) {
+  function PersonCtrl($stateParams) {
     var vm = this;
     vm.id = $stateParams.id;
     vm.sort = '+name';
@@ -21,10 +21,6 @@
       {'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},
       {'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},
       {'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'},{'url':'http://placehold.it/100x100','caption':'Some foto'}]
-
-    vm.openLightboxModal = function (index) {
-      Lightbox.openModal(vm.images, index);
-    };
 
     for (var i = 0; i < vm.list.length; i++) {
       if (vm.list[i].id == $stateParams.id ) {

@@ -6,11 +6,13 @@
     width 500px
     float left
     @media(max-width:375px)
-      margin 0 auto
+      width 210px
     li
       display inline-block
       &:first-child
         margin 0 0 0 100px
+        @media(max-width:375px)
+          margin 0 0 0 10px
       & > a
         color gold
         height 100%

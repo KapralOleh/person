@@ -5,9 +5,10 @@ section.person-desk.person-id-section
   p {{main.currentPerson.desc}}
   .gallery-section
     h2 Gallery
-    .gallery-item(ng-repeat="img in main.images")
-      a(ng-click="main.openLightboxModal($index)")
-        img(ng-src="{{img.url}}")
+    ng-photoswipe(slides="main.images",options="opts")
+    //- .gallery-item(ng-repeat="img in main.images")
+    //-   a(ng-click="main.openLightboxModal($index)")
+    //-     img(ng-src="{{img.url}}")
 
 
 
