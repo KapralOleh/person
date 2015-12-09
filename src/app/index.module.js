@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('person', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'toastr','angular-carousel','ngDialog','ngPhotoswipe','uiGmapgoogle-maps']);
+    .module('person', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'toastr','angular-carousel','ngDialog','uiGmapgoogle-maps','ngMaterial']);
 
 })();

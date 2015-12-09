@@ -16,9 +16,9 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        templateUrl: 'app/home/home.html',
+        controller: 'HomeController',
+        controllerAs: 'HomeCtrl'
       })
       .state('Contact', {
         url: '/contact',
@@ -29,13 +29,13 @@
       .state('Persons', {
         url: '/persons',
         templateUrl: 'app/persons/persons.html',
-        controller: 'PersonCtrl',
+        controller: 'PersonController',
         controllerAs: 'PersonCtrl'
       })
       .state('personDetail', {
         url: '/persons/:id',
         templateUrl: 'app/persons/personid/personid.html',
-        controller: 'PersonCtrl',
+        controller: 'PersonController',
         controllerAs: 'PersonCtrl'
       });
 

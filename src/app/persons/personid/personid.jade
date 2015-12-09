@@ -1,11 +1,13 @@
-nav.navigation(person-navbar)
 section.person-desk.person-id-section
   h1 {{PersonCtrl.currentPerson.name}}
   img(ng-src='{{PersonCtrl.currentPerson.img}}', alt='')
   p {{PersonCtrl.currentPerson.desc}}
   .gallery-section
     h2 Gallery
-    ng-photoswipe(slides="PersonCtrl.images",options="PersonCtrl.options")
   .map-section
     h2 Location
+    ui-gmap-google-map(draggable="true" center='PersonCtrl.currentPerson.map.center' zoom='PersonCtrl.currentPerson.map.zoom' options="PersonCtrl.currentPerson.options")
+    ui-gmap-marker(coords="PersonCtrl.currentPerson.marker.coords" options="PersonCtrl.currentPerson.marker.options" idkey="PersonCtrl.currentPerson.marker.id")
+      ui-gmap-window
+        .title {{PersonCtrl.currentPerson.name}}
 

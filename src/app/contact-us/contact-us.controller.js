@@ -20,9 +20,6 @@
       options: { draggable: true },
       show: false
     };
-    vm.windowOptions = {
-      visible: false
-    };
     vm.title = 'Hello';
   }
 })();

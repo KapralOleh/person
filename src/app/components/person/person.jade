@@ -1,5 +1,5 @@
 a(ui-sref='personDetail({ id: item.id })')
 	img(ng-src='{{item.img}}', alt='')
-span.person-data {{item.name}} - 
+span.person-data {{item.name}} -
 	em {{item.age}}
-	.delete(ng-click='main.delete(item)') +
+	.delete(ng-click='PersonCtrl.delete(item)') +

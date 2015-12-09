@@ -1,4 +1,3 @@
-nav.navigation(person-navbar)
 .person-desk.contact-section
   h1 Conatct us
   form(ng-submit='')
@@ -9,6 +8,6 @@ nav.navigation(person-navbar)
     textarea.person-input.field(cols='30', rows='10', placeholder='...')
     input.person-input.button(type='submit')
   ui-gmap-google-map(draggable="true" center='ContactCtrl.map.center' zoom='ContactCtrl.map.zoom' options="ContactCtrl.options")
-    ui-gmap-marker(click="ContactCtrl.showDesc()" coords="ContactCtrl.marker.coords" options="ContactCtrl.marker.options" idkey="ContactCtrl.marker.id")
-      ui-gmap-window(options="" closeClick="ContactCtrl.closeDesc()")
+    ui-gmap-marker(coords="ContactCtrl.marker.coords" options="ContactCtrl.marker.options" idkey="ContactCtrl.marker.id")
+      ui-gmap-window
         .title {{ContactCtrl.title}}

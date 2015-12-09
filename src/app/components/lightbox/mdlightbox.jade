@@ -1,0 +1,9 @@
+md-dialog(aria-label='Screenshot')
+  md-toolbar
+    .md-toolbar-tools
+      h2(ng-if='title', ng-bind='title')
+      span(flex='')
+      md-button.md-icon-button(ng-click='cancel()')
+        md-icon.icon-static(md-font-library='material-icons', aria-label='Close dialog') close
+  md-dialog-content
+    img.demo-image(ng-src='{{image}}', alt='{{title}}')
