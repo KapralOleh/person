@@ -1,7 +1,0 @@
-nav.navigation(person-navbar)
-.person-desk.main-section
-  h1 Hello
-  ul.image(rn-carousel rn-carousel-controls ng-carousel-transition="hexagon")
-    li(ng-repeat="image in main.personImages track by $index")
-      img(ng-src="{{image}}")
-  ng-photoswipe(slides="PersonCtrl.images",options="PersonCtrl.options")
