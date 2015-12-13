@@ -1,14 +1,33 @@
-body
+maincolor = #68D3F3
+html,body
   margin 0 auto
-  width 900px
   height 100%
+  font-size 18px
   @media(max-width:375px)
-    width 100%
+    font-size 16px
+.inner-wrapper
+  min-height 100%
+  padding 60px 0
+  position relative
+  background #eee
+.content-wrapper
+  width 90%
+  padding 30px 15px
+  margin 30px auto
+  background #fff
+  border-radius 10px
+  box-shadow 2px 4px 5px 0 rgba(0,0,0,0.3), -2px 2px 5px 0 rgba(0,0,0,0.15)
 .person-input
   width 100%
   margin-bottom 5px
+.person-desk
+  width 600px
+  margin 0 auto
+  height 100%
+  @media(max-width:375px)
+    width 300px
 .button
-  background #9524A9
+  background maincolor
   border none
   outline none
   color gold
@@ -20,39 +39,42 @@ body
   border-radius 10px
   outline none
   padding 5px 15px
-  border 2px solid #9524A9
-  color #9524A9
+  border 2px solid maincolor
+  color maincolor
 .angular-google-map-container
   height 300px
 #cboxOverlay
   background #000
 h1
 h2
-  color #9524A9
+  color maincolor
   font-size 24px
   text-align center
-  margin 1em
 .main-section
   position relative
-  height 500px
-  @media(max-width:375px)
-    height 300px
-  .rn-carousel-control
-    color gold
-
-  .image
-    width 400px
+  .main-news
+    margin-top 20px
+  .main-carousel
     height 200px
-    margin 0 auto
-    border-radius 20px
-    border 2px solid #9524A9
+    position relative
     @media(max-width:375px)
-      width 200px
       height 100px
-    li
+    .rn-carousel-control
+      color gold
+
+    .image
       width 400px
+      height 200px
       margin 0 auto
+      border-radius 20px
+      border 2px solid maincolor
       @media(max-width:375px)
         width 200px
-      img
-        width 100%
+        height 100px
+      li
+        width 400px
+        margin 0 auto
+        @media(max-width:375px)
+          width 200px
+        img
+          width 100%

@@ -1,27 +1,20 @@
-.back
-  float right
-  color gold
-  font-weight bold
-  border 1px solid #9524A9
-  border-radius 8px
-  margin-top 10px
-  background #9524A9
-  padding 5px
-  @media(max-width:375px)
-    width 50px
-    margin-right 10px
-  &:hover
-    color #9524A9
-    background gold
-    border 1px solid #9524A9
-.person-desk
-  width 500px
-  margin 0 auto
-  padding-top 50px
-  clear both
-  @media(max-width:375px)
-    width 300px
-    padding-top 10px
+.persons-section
+  .back
+    float right
+    color gold
+    font-weight bold
+    border 1px solid maincolor
+    border-radius 8px
+    margin-top 10px
+    background maincolor
+    padding 5px
+    @media(max-width:375px)
+      width 50px
+      margin-right 10px
+    &:hover
+      color maincolor
+      background gold
+      border 1px solid maincolor
   .animate
   &.ng-enter
     transition 0.5s linear all
@@ -60,6 +53,8 @@
         transform translateX(100%)
 
   .person-list
+    .person-data
+      color maincolor
     .animate
       display flex
       span
@@ -72,3 +67,12 @@
         height 50px
         border-radius 50%
         margin-right 20px
+        border 1px solid maincolor
+      .delete
+        transform rotate(45deg)
+        display inline-block
+        line-height 50px
+        margin-left 20px
+        font-size 36px
+        color red
+        cursor pointer
