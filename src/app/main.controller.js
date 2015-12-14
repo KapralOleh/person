@@ -12,14 +12,14 @@
     vm.openSingIn = function () {
       ngDialog.closeAll();
       ngDialog.open({
-        className: "ngdialog-theme-default login-width",
-        template: 'sign/sing-in.html'
+        template: '/app/components/sign/sign-in.html',
+        className: 'ngdialog-theme-default'
       })
     }
     vm.openSingUp = function () {
       ngDialog.closeAll();
       ngDialog.open({
-        className: "ngdialog-theme-default login-width",
+        className: "ngdialog-theme-default",
         template: 'sign/sing-up.html'
       })
     }

@@ -1,12 +1,21 @@
 .navigation
-  background #9524A9
+  background maincolor
   height 60px
   border-radius 0 0 10px 10px
+  position fixed
+  top 0
+  width 100%
+  z-index 10
+  box-shadow 0 2px 8px rgba(0,0,0,0.5)
+  font-weight bold
+  @media(max-width:375px)
+    font-weight normal
   ul
     width 500px
     float left
     @media(max-width:375px)
-      width 210px
+      width 240px
+      border-right 1px solid gold
     li
       display inline-block
       &:first-child
@@ -23,7 +32,7 @@
           padding 0 5px
         &:hover
           background gold
-          color #9524A9
+          color maincolor
   .login
     float right
     height 100%

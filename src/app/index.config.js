@@ -20,8 +20,7 @@
       plain: true,
       showClose: true,
       closeByDocument: true,
-      closeByEscape: true,
-      trapFocus: false
+      closeByEscape: true
     });
     // Set options third-party lib
     toastrConfig.allowHtml = true;

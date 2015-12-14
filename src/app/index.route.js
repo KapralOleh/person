@@ -8,13 +8,14 @@
         enabled: true,
         requireBase: false
       });
+      $locationProvider.hashPrefix('!');
     }])
     .config(routerConfig);
 
   /** @ngInject */
   function routerConfig($stateProvider, $urlRouterProvider, $httpProvider) {
     $stateProvider
-      .state('home', {
+      .state('Home', {
         url: '/',
         templateUrl: 'app/home/home.html',
         controller: 'HomeController',
@@ -25,6 +26,18 @@
         templateUrl: 'app/contact-us/contact-us.html',
         controller: 'ContactController',
         controllerAs: 'ContactCtrl'
+      })
+      .state('Terms', {
+        url: '/terms',
+        templateUrl: 'app/terms/terms.html',
+        controller: 'TermsController',
+        controllerAs: 'TermsCtrl'
+      })
+      .state('Policy', {
+        url: '/policy',
+        templateUrl: 'app/policy/policy.html',
+        controller: 'PolicyController',
+        controllerAs: 'PolicyCtrl'
       })
       .state('Persons', {
         url: '/persons',

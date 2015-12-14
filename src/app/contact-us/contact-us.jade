@@ -1,10 +1,8 @@
 .person-desk.contact-section
   h1 Conatct us
   form(ng-submit='')
-    label(for='name')
-      input.person-input.field(type='text')
-    label(for='email')
-      input.person-input.field(type='text')
+    input.person-input.field(placeholder="name" type='text')
+    input.person-input.field(placeholder="email" type='text')
     textarea.person-input.field(cols='30', rows='10', placeholder='...')
     input.person-input.button(type='submit')
   ui-gmap-google-map(draggable="true" center='ContactCtrl.map.center' zoom='ContactCtrl.map.zoom' options="ContactCtrl.options")

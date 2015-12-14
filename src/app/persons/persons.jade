@@ -1,11 +1,13 @@
-a(ng-href="/" class="back") Back
-.person-desk
+.person-desk.persons-section
+  h1 Persons
+  //- a(ng-href="/" class="back") Back
   input.person-input.field(type='text', ng-model='PersonCtrl.search.name', placeholder='Search..')
   button.person-input.button(ng-click='PersonCtrl.toogle()') {{PersonCtrl.text}}
-  ul.person-list.animate(ng-if='PersonCtrl.variable')
+  ul.person-list.animate(ng-if='!PersonCtrl.variable')
     button.person-input.button(ng-click='PersonCtrl.sortOrder()') Sort
     li.animate(ng-repeat='item in PersonCtrl.list | filter: PersonCtrl.search.name:strict | orderBy: PersonCtrl.sort ', person-item)
   form(ng-submit='PersonCtrl.addPerson()')
     input.person-input.field(type='text', ng-model='PersonCtrl.name', placeholder='name')
     input.person-input.field(type='number', ng-model='PersonCtrl.age', placeholder='age')
     input.person-input.button(type='submit', value='Add person')
+
