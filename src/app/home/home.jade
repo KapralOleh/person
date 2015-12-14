@@ -6,3 +6,9 @@
   hr
   .gallery(ng-repeat="img in HomeCtrl.images track by $index")
     img(ng-src="{{img}}" md-lightbox md-lightbox-title="Hello" md-lightbox-desc="desc")
+  hr
+  #image-croper
+    .cropit-image-preview-container
+      .cropit-image-preview
+    input.cropit-image-zoom-input(type="range")
+    input.cropit-image-input(type="file")
