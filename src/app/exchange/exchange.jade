@@ -1,0 +1,13 @@
+.person-desk.exchange-section
+  h1 Exchange
+  input.person-input.field(type="text" ng-model="query")
+  .board
+    table
+      tr
+        th
+        th Валюта
+        th Курс
+      tr(ng-repeat="change in ExchangeCtrl.exchange | filter:query")
+        td {{change.cc}}
+        td {{change.txt}}
+        td {{change.rate}}

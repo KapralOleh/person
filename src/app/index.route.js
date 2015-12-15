@@ -39,6 +39,12 @@
         controller: 'PolicyController',
         controllerAs: 'PolicyCtrl'
       })
+      .state('Exchange', {
+        url: '/exchange',
+        templateUrl: 'app/exchange/exchange.html',
+        controller: 'ExchangeController',
+        controllerAs: 'ExchangeCtrl'
+      })
       .state('Persons', {
         url: '/persons',
         templateUrl: 'app/persons/persons.html',

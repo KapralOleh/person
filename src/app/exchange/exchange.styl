@@ -1,0 +1,19 @@
+table
+  width 100%
+  margin-top 10px
+  th
+    color maincolor
+    cursor pointer
+  td
+  th
+    border 2px solid secondcolor
+    height 40px
+    vertical-align middle
+    text-align center
+    min-width 70px
+  tr:not(:first-child)
+    &:hover
+      background maincolor
+      color secondcolor
+      cursor pointer
+

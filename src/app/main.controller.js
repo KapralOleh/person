@@ -14,14 +14,14 @@
       ngDialog.open({
         template: '/app/components/sign/sign-in.html',
         className: 'ngdialog-theme-default'
-      })
+      });
     }
     vm.openSingUp = function () {
       ngDialog.closeAll();
       ngDialog.open({
         className: "ngdialog-theme-default",
         template: 'sign/sing-up.html'
-      })
+      });
     }
   }
 })();

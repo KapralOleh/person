@@ -1,18 +1,18 @@
 .person-desk.terms-section
   h1 Terms & conditions
   nav.articles-nav
-    ul
+    ul(du-spy-context du-scroll-container="articles-content")
       li
-        a.active(href="#article-1" du-smooth-scroll) Article 1
+        a.active(href="#article-1" du-smooth-scroll du-scrollspy) Article 1
       li
-        a(href="#article-2" du-smooth-scroll) Article 2
+        a(href="#article-2" du-smooth-scroll du-scrollspy) Article 2
       li
-        a(href="#article-3" du-smooth-scroll) Article 3
+        a(href="#article-3" du-smooth-scroll du-scrollspy) Article 3
       li
-        a(href="#article-4" du-smooth-scroll) Article 4
+        a(href="#article-4" du-smooth-scroll du-scrollspy) Article 4
       li
-        a(href="#article-5" du-smooth-scroll) Article 5
-  .articles-content
+        a(href="#article-5" du-smooth-scroll du-scrollspy) Article 5
+  .articles-content#articles-content(du-scroll-container)
     article#article-1
       h2 Article 1
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad ut vero. Iusto tempore eveniet laborum veniam quod, quas rerum temporibus quo et, sunt voluptates doloremque illo unde. Quia, aut.
@@ -39,6 +39,10 @@
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In earum voluptates non. Explicabo sunt, inventore rem. Odit aliquid beatae ut, dolores est ex maiores odio, eaque, eum, molestias dolor fugiat!
     article#article-5
       h2 Article 5
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad ut vero. Iusto tempore eveniet laborum veniam quod, quas rerum temporibus quo et, sunt voluptates doloremque illo unde. Quia, aut.
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In earum voluptates non. Explicabo sunt, inventore rem. Odit aliquid beatae ut, dolores est ex maiores odio, eaque, eum, molestias dolor fugiat!
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad ut vero. Iusto tempore eveniet laborum veniam quod, quas rerum temporibus quo et, sunt voluptates doloremque illo unde. Quia, aut.
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In earum voluptates non. Explicabo sunt, inventore rem. Odit aliquid beatae ut, dolores est ex maiores odio, eaque, eum, molestias dolor fugiat!
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad ut vero. Iusto tempore eveniet laborum veniam quod, quas rerum temporibus quo et, sunt voluptates doloremque illo unde. Quia, aut.
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. In earum voluptates non. Explicabo sunt, inventore rem. Odit aliquid beatae ut, dolores est ex maiores odio, eaque, eum, molestias dolor fugiat!
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad ut vero. Iusto tempore eveniet laborum veniam quod, quas rerum temporibus quo et, sunt voluptates doloremque illo unde. Quia, aut.
