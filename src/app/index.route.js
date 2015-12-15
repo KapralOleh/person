@@ -33,11 +33,11 @@
         controller: 'TermsController',
         controllerAs: 'TermsCtrl'
       })
-      .state('Policy', {
-        url: '/policy',
-        templateUrl: 'app/policy/policy.html',
-        controller: 'PolicyController',
-        controllerAs: 'PolicyCtrl'
+      .state('Faq', {
+        url: '/faq',
+        templateUrl: 'app/faq/faq.html',
+        controller: 'FaqController',
+        controllerAs: 'FaqCtrl'
       })
       .state('Exchange', {
         url: '/exchange',
