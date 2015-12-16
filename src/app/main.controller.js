@@ -12,7 +12,7 @@
     vm.openSingIn = function () {
       ngDialog.closeAll();
       ngDialog.open({
-        template: '/app/components/sign/sign-in.html',
+        template: 'app/components/sign/sign-in.html',
         className: 'ngdialog-theme-default'
       });
     }
@@ -20,7 +20,7 @@
       ngDialog.closeAll();
       ngDialog.open({
         className: "ngdialog-theme-default",
-        template: 'sign/sing-up.html'
+        template: '<h1>Bla</h1>'
       });
     }
   }

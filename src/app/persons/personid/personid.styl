@@ -1,18 +1,42 @@
 .person-id-section
   .angular-google-map-container
-      border-radius 10px
-      border 2px solid maincolor
-      margin-top 20px
-      .title
-        width 50px
-        height 15px
-        line-height 15px
-        color maincolor
-        font-weight bold
-  // .person-id-section
-  //   .gallery-item
-  //     width 100px
-  //     height 100px
-  //     margin 5px
-  //     display inline-block
-  //     cursor pointer
+    border-radius 10px
+    border 2px solid maincolor
+    margin-top 20px
+    .title
+      width 50px
+      height 15px
+      line-height 15px
+      color maincolor
+      font-weight bold
+  .image-click
+    width 100px
+    height 100px
+    margin 5px
+    cursor pointer
+    float left
+md-toolbar
+  height 100%
+  min-height 100%
+  .md-toolbar-tools
+    height 100%
+    h2
+      color #fff
+    md-icon
+      height 100%
+      margin-left -40px
+      &:after
+        content: '+'
+        transform rotate(45deg)
+        display inline-block
+        line-height 50px
+        font-size 36px
+        margin-left 13px
+        color red
+        cursor pointer
+md-dialog-content
+  padding 15px
+  .demo-image
+    width 400px
+    height 400px
+

@@ -4,6 +4,8 @@ section.person-desk.person-id-section
   p {{PersonCtrl.currentPerson.desc}}
   .gallery-section
     h2 Gallery
+    .gallery(ng-repeat="image in PersonCtrl.currentPerson.images track by $index")
+      img(ng-src="{{image}}" md-lightbox md-lightbox-title="Hello")
   .map-section
     h2 Location
     ui-gmap-google-map(draggable="true" center='PersonCtrl.currentPerson.map.center' zoom='PersonCtrl.currentPerson.map.zoom' options="PersonCtrl.currentPerson.options")

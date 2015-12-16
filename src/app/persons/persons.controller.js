@@ -12,11 +12,19 @@
     vm.show = true;
     vm.sort = '+name';
     vm.currentPerson = {};
+    console.log(angular.element('icon-static'))
     vm.list = [
       {
         name:'Oleh',
         age: 23 ,
         img:'http://gdpit.com/avatars_pictures/animals/gdpit_com_96080809_2.jpg',
+        images:[
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100'
+        ],
         desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequuntur dolores, nam a officia molestias numquam praesentium enim veritatis natus, sit, aut aperiam, odio possimus animi distinctio sunt mollitia voluptatem!',
         id:1,
         marker: {
@@ -40,6 +48,13 @@
         name:'Bohdan',
         age: 23 ,
         img:'http://gdpit.com/avatars_pictures/animals/gdpit_com_96080809_2.jpg',
+        images:[
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100'
+        ],
         desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequuntur dolores, nam a officia molestias numquam praesentium enim veritatis natus, sit, aut aperiam, odio possimus animi distinctio sunt mollitia voluptatem!',
         id:2,
         marker: {
@@ -63,6 +78,13 @@
         name:'Tom',
         age: 23 ,
         img:'http://gdpit.com/avatars_pictures/animals/gdpit_com_96080809_2.jpg',
+        images:[
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100'
+        ],
         desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequuntur dolores, nam a officia molestias numquam praesentium enim veritatis natus, sit, aut aperiam, odio possimus animi distinctio sunt mollitia voluptatem!',
         id:3,
         marker: {
@@ -86,6 +108,13 @@
         name:'Ihor',
         age: 23 ,
         img:'http://gdpit.com/avatars_pictures/animals/gdpit_com_96080809_2.jpg',
+        images:[
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100',
+          'http://placehold.it/100x100'
+        ],
         desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequuntur dolores, nam a officia molestias numquam praesentium enim veritatis natus, sit, aut aperiam, odio possimus animi distinctio sunt mollitia voluptatem!',
         id:4,
         marker: {
