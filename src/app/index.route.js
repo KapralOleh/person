@@ -51,6 +51,12 @@
         controller: 'PersonController',
         controllerAs: 'PersonCtrl'
       })
+      .state('Weather', {
+        url: '/weather',
+        templateUrl: 'app/weather/weather.html',
+        controller: 'WeatherController',
+        controllerAs: 'WeatherCtrl'
+      })
       .state('personDetail', {
         url: '/persons/:id',
         templateUrl: 'app/persons/personid/personid.html',
