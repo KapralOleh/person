@@ -53,6 +53,71 @@ h2
   margin-bottom 1em
 .main-section
   position relative
+  .banner-wraper
+    margin 10px auto
+    width 100%
+    height 200px
+    #ad
+      width 100%
+      height 200px
+      overflow hidden
+      position relative
+      opacity 0
+      .myad-img
+        position absolute
+        background url('../assets/images/graphics.png') no-repeat 0px 0px
+      #myad-clouds
+        width inherit
+        height inherit
+        top 0
+        left 0
+        background-repeat: repeat-x
+      #myad-photo
+        width inherit
+        height 143px
+        background-position 0px -325px
+        bottom 0
+        left 0
+      #myad-txt1
+      #myad-txt2
+        position absolute
+        width inherit
+        text-align center
+        color #fff
+        font-size 3em
+        top 0
+        left 0
+        text-transform uppercase
+        text-shadow 0px 3px 3px rgba(0,0,102,0.5)
+      #myad-txt1
+        span
+          display inline-block
+          position relative
+      #myad-shadow
+        width 375px
+        height 16px
+        background-position -311px -236px
+        top 175px
+        left 306px
+      #myad-txt3
+        width 510px
+        height 28px
+        background-position -2px -202px;
+        top 58px
+        left 73px
+      #myad-marker
+        width 60px
+        height 95px
+        background-position -243px -230px
+        top 90px
+        left 290px
+      a
+        #myad-surfboard
+          width 237px
+          height 62px
+          background-position -2px -233px
+          top 110px
+          left 350px
   .main-news
     margin-top 20px
   .main-carousel
@@ -79,3 +144,27 @@ h2
           width 200px
         img
           width 100%
+////////////////////////////
+///////ngDialog style///////
+////////////////////////////
+.ngdialog.ngdialog-theme-default .ngdialog-content
+  width 600px
+  padding 10px 100px
+  @media(max-width:375px)
+    width 90%
+    padding 5px 30px
+  .ngdialog-close:before
+    color secondcolor
+    top 10px
+    right 10px
+  h1
+    margin 10px 0 25px
+  form
+    margin 30px auto
+    input.field
+      border none
+      border-radius 0
+      background #f0f0f0
+      border-bottom 2px solid #3f51b5
+    .person-input.button
+      margin-top 20px

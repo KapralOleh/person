@@ -12,7 +12,6 @@
     vm.show = true;
     vm.sort = '+name';
     vm.currentPerson = {};
-    console.log(angular.element('icon-static'))
     vm.list = [
       {
         name:'Oleh',
