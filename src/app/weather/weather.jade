@@ -1,0 +1,23 @@
+.person-desk.weather-section
+  h1 Weather
+  .input-block
+    input.person-input.field(type="text" placeholder="Enter city.." ng-model="WeatherCtrl.city")
+    .search(ng-click="WeatherCtrl.getWeatherByCity()")
+  h2 {{WeatherCtrl.cityName}} , {{WeatherCtrl.country}}
+  .weather-table
+    table
+      tr
+        th Day
+        th Temperature
+        th Sky
+        th State
+      tr(ng-repeat="day in WeatherCtrl.weather")
+        td{{day.dt | date : 'EEEE'}}
+        td{{WeatherCtrl.Math.round(day.temp.day)}}&deg;C
+        td
+          img.table-img(ng-src="../assets/images/icons/{{day.weather[0].icon}}.png")
+        td{{day.weather[0].description}}
+  .weather-block
+    .weather-wraper
+      .weather-card(ng-repeat="day in WeatherCtrl.weather")
+

@@ -6,30 +6,70 @@
   top 0
   width 100%
   z-index 10
-  box-shadow 0 2px 8px rgba(0,0,0,0.5)
+  box-shadow 0 2px 8px rgba(0,0,0,0.7)
   font-weight bold
   @media(max-width:375px)
     font-weight normal
-  ul
-    width 600px
+  menu-icon.active
+    background #fff
+  .menu-icon
+    display none
+    width 60px
+    height 100%
+    cursor pointer
     float left
-    @media(max-width:375px)
-      width 240px
-      border-right 1px solid secondcolor
+    @media(max-width:850px)
+      display block
+  .menu-wrap
+    display none
+    width 100%
+    @media(max-width:850px)
+      display block
+      position fixed
+      top 60px
+      bottom 0
+      background rgba(0,0,0,0.5)
+      z-index -1
+  .mobile-menu
+    display none
+    @media(max-width:850px)
+      display block !important
+      width 100%
+      position absolute
+      z-index 1
+      top 60px
+      background #fff
+      box-shadow 0 2px 8px rgba(0,0,0,0.5)
+      li
+        display block
+        margin 0
+        a
+          color secondcolor
+          height 100%
+          display inline-block
+          line-height 60px
+          padding 0 20px
+          width 100%
+          text-align right
+          border-top 1px solid maincolor
+          &:hover
+            background secondcolor
+            color #fff
+  .desktop-menu
+    width 80%
+    float left
+    @media(max-width:850px)
+      display none
     li
       display inline-block
       &:first-child
         margin 0 0 0 100px
-        @media(max-width:375px)
-          margin 0 0 0 10px
       & > a
         color secondcolor
         height 100%
         display inline-block
         line-height 60px
         padding 0 20px
-        @media(max-width:375px)
-          padding 0 5px
         &:hover
           background secondcolor
           color maincolor

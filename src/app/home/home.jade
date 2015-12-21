@@ -1,12 +1,42 @@
 .person-desk.main-section
+  .banner-wraper
+    #ad
+      .myad-img#myad-clouds
+      .myad-img#myad-photo
+      #myad-txt1
+        span#myad-ltr01 F
+        span#myad-ltr02 e
+        span#myad-ltr03 e
+        span#myad-ltr04 l
+        span#myad-ltr05 i
+        span#myad-ltr06 n
+        span#myad-ltr07 g
+        span#myad-ltr08 s
+        span#myad-ltr09 t
+        span#myad-ltr10 r
+        span#myad-ltr11 e
+        span#myad-ltr12 s
+        span#myad-ltr13 s
+        span#myad-ltr14 e
+        span#myad-ltr15 d
+        span#myad-ltr16 ?
+      #myad-txt2 You could be here!
+      .myad-img#myad-shadow
+      .myad-img#myad-txt3
+      .myad-img#myad-marker
+      a(ng-href="http://greensock.com/" target="_blank")
+        .myad-img#myad-surfboard
   h1 Hello
   .main-carousel
     ul.image(rn-carousel rn-carousel-controls ng-carousel-transition="hexagon")
       li(ng-repeat="image in HomeCtrl.personImages track by $index")
         img(ng-src="{{image}}")
+<<<<<<< HEAD
   .div
     ng-photoswipe(slides="HomeCtrl.slides" options="HomeCtrl.opts")
 
+=======
+>>>>>>> 9f2877291dc06e5ae153f323135702c25b066b57
   article.main-news
     h2 News
     p

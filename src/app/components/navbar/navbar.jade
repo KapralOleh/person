@@ -1,4 +1,17 @@
-ul
+ul.desktop-menu
+  li
+    a(ng-href="/") Home
+  li
+    a(ng-href="/persons") Persons
+  li
+    a(ng-href="/exchange") Exchange
+  li
+    a(ng-href="/weather") Weather
+  li
+    a(ng-href="/contact") Contact Us
+menu-icon.menu-icon(ng-click="main.toogleMenu()" ng-class="main.showMenu ? 'active' : ''")
+.menu-wrap(ng-if="main.showMenu" ng-click="main.toogleMenu()")
+ul.mobile-menu(ng-if="main.showMenu")
   li
     a(ng-href="/") Home
   li
