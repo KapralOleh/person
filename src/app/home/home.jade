@@ -4,9 +4,8 @@
     ul.image(rn-carousel rn-carousel-controls ng-carousel-transition="hexagon")
       li(ng-repeat="image in HomeCtrl.personImages track by $index")
         img(ng-src="{{image}}")
-  //- hr
-  //- .gallery(ng-repeat="img in HomeCtrl.images track by $index")
-  //-   img(ng-src="{{img}}" md-lightbox md-lightbox-title="Hello" md-lightbox-desc="desc")
+  .div
+    ng-photoswipe(slides="HomeCtrl.slides" options="HomeCtrl.opts")
 
   article.main-news
     h2 News
