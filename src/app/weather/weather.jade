@@ -24,4 +24,8 @@
     .weather-block(ng-switch-when="block")
       .weather-wraper
         .weather-card(ng-repeat="day in WeatherCtrl.weather")
+          .img
+            img.block-img(ng-src="../assets/images/icons/{{day.weather[0].icon}}.png")
+          .temp
+          .desc
 

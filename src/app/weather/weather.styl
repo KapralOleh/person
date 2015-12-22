@@ -10,6 +10,8 @@
       cursor pointer
       height 40px
       width 36px
+      @media(max-width:375px)
+        height 34px
   .tab-menu
     width 100%
     height 60px
@@ -35,6 +37,8 @@
         position absolute
         top 12px
         left 90px
+        @media(max-width:375px)
+          left 15px
     .block-btn
       border-left 1px solid #fff
       &:before
@@ -42,7 +46,47 @@
         position absolute
         top 12px
         left 90px
+        @media(max-width:375px)
+          left 15px
   .tab-content
     .weather-table
-      .table-img
-        width 60px
+      table
+        td
+        th
+          min-width auto
+          .table-img
+            width 60px
+            @media(max-width:375px)
+              width 40px
+    .weather-block
+      .weather-wraper
+        .weather-card
+          cursor pointer
+          display inline-block
+          width 190px
+          margin 5px
+          height 200px
+          box-shadow 2px 4px 5px 2px rgba(0,0,0,0.3), -2px 2px 5px 2px rgba(0,0,0,0.15)
+          &:last-child
+            width 100%
+            margin 0
+          @media(max-width:375px)
+            width 100%
+          .img
+          .temp
+            display table
+            border 1px solid #000
+            width 50%
+            height 50%
+            float left
+          .desc
+            display inline-block
+            border 1px solid #000
+            height 50%
+            width 100%
+          .img
+            vertical-align middle
+            text-align center
+            .block-img
+              width 80%
+
