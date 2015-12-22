@@ -9,7 +9,7 @@
   function HomeController() {
     var vm = this;
     vm.personImages = ['http://placehold.it/200x100','http://placehold.it/200x100','http://placehold.it/200x100','http://placehold.it/200x100'];
-    vm.items = [
+    vm.slides = [
       {
           src: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrTgaP_TaPuS035ynJDnQbYWJ1RO_bgDHEdImWo25MCuO-58-9Bg',
           w: 360,

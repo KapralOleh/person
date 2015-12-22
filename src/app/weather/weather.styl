@@ -9,7 +9,40 @@
       background url('../assets/images/search.svg') no-repeat 50% 50%
       cursor pointer
       height 40px
-      width 40px
-  .weather-table
-    .table-img
-      width 60px
+      width 36px
+  .tab-menu
+    width 100%
+    height 60px
+    .table-btn
+    .block-btn
+      position relative
+      width 50%
+      border-radius 10px 10px 0 0
+      background maincolor
+      display inline-block
+      height inherit
+      float left
+      color #fff
+      line-height 60px
+      text-align center
+      margin-bottom 1em
+      cursor pointer
+      &.active
+        background secondcolor
+    .table-btn
+      &:before
+        content url('../assets/images/view-table.svg')
+        position absolute
+        top 12px
+        left 90px
+    .block-btn
+      border-left 1px solid #fff
+      &:before
+        content url('../assets/images/view-block.svg')
+        position absolute
+        top 12px
+        left 90px
+  .tab-content
+    .weather-table
+      .table-img
+        width 60px
