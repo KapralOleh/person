@@ -70,23 +70,43 @@
           &:last-child
             width 100%
             margin 0
+          &:hover
+            background maincolor
+            color secondcolor
+            cursor pointer
           @media(max-width:375px)
             width 100%
+          .day
+            width 100%
+            height 20%
+            line-height 40px
+            text-align center
           .img
           .temp
-            display table
-            border 1px solid #000
             width 50%
-            height 50%
+            height 30%
             float left
           .desc
             display inline-block
-            border 1px solid #000
             height 50%
             width 100%
           .img
+            display flex
             vertical-align middle
             text-align center
             .block-img
+              width 80px
+              margin auto
+          .temp
+            font-size 32px
+            text-align center
+            line-height 60px
+          .desc
+            .desc-list
               width 80%
+              margin 13px auto
+              span
+                display inline-block
+                float right
+
 
