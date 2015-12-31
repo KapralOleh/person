@@ -6,7 +6,7 @@
     .controller('WeatherController', WeatherController);
 
   /** @ngInject */
-  function WeatherController($resource) {
+  function WeatherController($resource,ngDialog) {
     var vm = this;
     var lang = 'ua';
     vm.currentTab = 'table';
@@ -92,7 +92,13 @@
           }
       );
     }
-
+    // vm.showWeather = function (){
+    //   ngDialog.closeAll();
+    //   ngDialog.open({
+    //     className: "ngdialog-theme-default",
+    //     template: '{{vm.country}}'
+    //   });
+    // }
 
 
   }

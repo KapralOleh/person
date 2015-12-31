@@ -9,6 +9,8 @@ ul.desktop-menu
     a(ng-href="/weather") Weather
   li
     a(ng-href="/contact") Contact Us
+  li
+    a(ng-href="/instagram") Instagram
 menu-icon.menu-icon(ng-click="main.toogleMenu()" ng-class="main.showMenu ? 'active' : ''")
 .menu-wrap(ng-if="main.showMenu" ng-click="main.toogleMenu()")
 ul.mobile-menu(ng-if="main.showMenu")
@@ -22,6 +24,8 @@ ul.mobile-menu(ng-if="main.showMenu")
     a(ng-href="/weather") Weather
   li
     a(ng-href="/contact") Contact Us
+  li
+    a(ng-href="/instagram") Instagram
 .login
   span(ng-click="main.openSingIn()") Sign in
   span(ng-click="main.openSingUp()") Sign up

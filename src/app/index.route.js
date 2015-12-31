@@ -57,6 +57,12 @@
         controller: 'WeatherController',
         controllerAs: 'WeatherCtrl'
       })
+      .state('Instagram', {
+        url: '/instagram',
+        templateUrl: 'app/instagram/instagram.html',
+        controller: 'InstagramController',
+        controllerAs: 'InstagramCtrl'
+      })
       .state('personDetail', {
         url: '/persons/:id',
         templateUrl: 'app/persons/personid/personid.html',
