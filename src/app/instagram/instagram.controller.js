@@ -1,12 +1,14 @@
-// (function() {
-//   'use strict';
+(function() {
+  'use strict';
 
-//   angular
-//     .module('person')
-//     .controller('InstagramController', InstagramController);
+  angular
+    .module('person')
+    .controller('InstagramController', InstagramController);
 
-//   /** @ngInject */
-//   function InstagramController() {
-//     var vm = this;
+  /** @ngInject */
+  function InstagramController() {
+    var vm = this;
 
-// })();
+  }
+
+})();
