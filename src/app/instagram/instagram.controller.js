@@ -8,7 +8,7 @@
   /** @ngInject */
   function InstagramController() {
     var vm = this;
-
+    // http://codepen.io/netsi1964/pen/drmkL
   }
 
 })();
