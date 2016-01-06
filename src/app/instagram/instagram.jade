@@ -1,3 +1,7 @@
 .person-desk.instagram-section
   h1 Instagram
-  .elem(photo-card)
+  .load-more.button( ng-click="InstagramCtrl.getMore()")
+    p You have {{InstagramCtrl.pics.length}} pictures on page - Click to see more pictures?
+  .insta-wraper
+   .collection(photo-card ng-repeat="p in InstagramCtrl.pics | orderBy:InstagramCtrl.orderBy")
+

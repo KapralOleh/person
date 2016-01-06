@@ -1,3 +1,5 @@
 figure
-  img
-  figcaption Photo
+  a(href="{{p.link}}" target="_blank")
+    img(ng-src="{{p.images.low_resolution.url}}" title="{{p.caption.text}}")
+  span.material-icons favorite
+  {{p.likes.count}}
