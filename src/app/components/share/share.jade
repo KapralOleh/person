@@ -1,0 +1,8 @@
+.share-icon(ng-click="openShare()")
+.share-content(ng-show="shareToogle")
+  .close(ng-click="close()") +
+  h4 Share:
+  ul
+    li(ng-click="shareFacebook()") facebook
+    li(ng-click="shareTwitter()") twitter
+    li(ng-click="shareGoogle()") google+
